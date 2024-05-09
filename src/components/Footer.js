@@ -1,8 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
-  AiFillGithub,
-  AiOutlineTwitter,
+  // AiFillGithub,
+  // AiOutlineTwitter,
+  AiOutlineWhatsApp,
   // AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -21,7 +22,7 @@ function Footer() {
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
-            <li className="social-icons">
+            {/* <li className="social-icons">
               <a
                 href="https://github.com/soumyajit4419"
                 style={{ color: "white" }}
@@ -40,7 +41,17 @@ function Footer() {
               >
                 <AiOutlineTwitter />
               </a>
-            </li>
+            </li> */}
+            <li className="social-icons">
+              <a
+                href="tel:+91 9773203735"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <AiOutlineWhatsApp />
+              </a>
+            </li> 
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/company/variation-hub/"

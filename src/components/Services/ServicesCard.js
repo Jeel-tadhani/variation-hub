@@ -3,8 +3,10 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsForward } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 
 function ServicesCards(props) {
+  const navigate = useNavigate()
   return (
     <Card className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
@@ -13,7 +15,7 @@ function ServicesCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.rdLink}>
+        <Button variant="primary" onClick={() => {navigate(props.rdLink)}}>
           {props.isBlog ? "Blog" : "Read More"}&nbsp;
           <BsForward /> 
         </Button>

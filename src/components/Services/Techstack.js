@@ -58,16 +58,11 @@ function Techstack() {
         <div className="web-icons">  
         <img src={MobileIcon} alt="about" className="img-fluid" />
         </div>
-        <h4 style={{ margin: "35px 0px" }}>Frontend Development</h4>
+        <h4 style={{ margin: "35px 0px" }}>Mobile Development</h4>
         <hr style={{ borderBottom: "2px solid", margin: "35px 0px", width: "100%" }} />
         <div className="web-languages">
-          <p className="web-languages-content">React</p>
-          <p className="web-languages-content">JavaScript</p>
-          <p className="web-languages-content">Angular</p>
-          <p className="web-languages-content">HTML</p>
-          <p className="web-languages-content">CSS</p>
-          <p className="web-languages-content">Redux</p>
-          <p className="web-languages-content">Typescript</p>
+          <p className="web-languages-content">iOS</p>
+          <p className="web-languages-content">Android</p>
         </div>
       </Col>
       <Col xs={4} md={4} className="web">

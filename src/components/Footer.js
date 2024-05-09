@@ -1,80 +1,118 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
-  // AiFillGithub,
-  // AiOutlineTwitter,
+  AiOutlineTwitter,
   AiOutlineWhatsApp,
-  // AiFillInstagram,
+  AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import logo from "../Assets/vh-name-logo.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Variation Hub</h3>
+        <Col md="3" className="footer-copywright">
+          <a href="/" className="d-flex">
+            <img src={logo} className="img-fluid logo-footer" alt="brand" />
+          </a>
+
+          <br />
+
+          <p className="p-footer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncove</p>
         </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} VH</h3>
+
+        <Col md="3" className="footer-copywright footer-header">
+          <strong>Our Services</strong>
+          <br />
+          <br />
+          <Link as={Link} to="/">Home</Link>
+          <br />
+          <Link as={Link} to="/our-services">Services</Link>
+          <br />
+          <Link as={Link} to="/project">Projects</Link>
+          <br />
+          <Link as={Link} to="/about">About</Link>
+          <br />
+          <Link as={Link} to="/contact-us">ContactUs</Link>
         </Col>
-        <Col md="4" className="footer-body">
+
+        <Col md="3" className="footer-copywright footer-header">
+          <strong>Contact Us</strong>
+          <br />
+          <br />
+          <div>
+            <a style={{ fontFamily: "math" }} href="tel:9773203735">+91 9773203735</a>
+            <br />
+            <a style={{ fontFamily: "math" }} href="mailto:service@variationhub.com" >service@variationhub.com</a>
+            <br />
+            <a style={{ fontFamily: "math", textAlign: "justify" }}
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://maps.app.goo.gl/jvdi5XNyd6vqTZbp9?g_st=iw">
+              105, Dhara Arcade, Mota Varachha, Surat, Gujarat - 394101.
+            </a>
+          </div>
+
+        </Col>
+
+        <Col md="3" className="footer-header">
+          <strong>Social Media</strong>
+          <br />
           <ul className="footer-icons">
-            {/* <li className="social-icons">
-              <a
-                href="https://github.com/soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
             <li className="social-icons">
               <a
-                href="https://twitter.com/Soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
+                href="/"
+                className="footer-svg"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiOutlineTwitter />
               </a>
-            </li> */}
+            </li>
+            <br />
+
             <li className="social-icons">
               <a
                 href="https://wa.me/9773203735"
-                style={{ color: "white" }}
-                target="_blank" 
+                className="footer-svg"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiOutlineWhatsApp />
               </a>
-            </li> 
+            </li>
+            <br />
+
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/company/variation-hub/"
-                style={{ color: "white" }}
-                target="_blank" 
+                className="footer-svg"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
               </a>
             </li>
-            {/* <li className="social-icons">
+            <br />
+
+            <li className="social-icons">
               <a
-                href="https://www.instagram.com/soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
+                href="/"
+                className="footer-svg"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillInstagram />
               </a>
-            </li> */}
+            </li>
+            <br />
+
           </ul>
         </Col>
       </Row>
+      <p className="p-footer end-footer">© Copyright 2023 Variation Hub. All rights reserved</p>
     </Container>
   );
 }

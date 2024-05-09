@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ServicesCards from "./ServicesCard";
-import Particle from "../Particle";
+// import Particle from "../Particle";
 import iotDevelopment from "../../Assets/Projects/iot-development.jpg";
 import mobileApplication from "../../Assets/Projects/mobile-application.png";
 import website from "../../Assets/Projects/website-development.jpg";
@@ -9,7 +9,7 @@ import website from "../../Assets/Projects/website-development.jpg";
 function Services() {
   return (
     <Container fluid className="project-section">
-      <Particle />
+      {/* <Particle /> */}
       <Container>
         <h1 className="project-heading">
           OUR SERVICES

@@ -1,8 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import { CgWebsite } from "react-icons/cg";
-import { BsForward } from "react-icons/bs";
+// import { CgWebsite } from "react-icons/cg";
 import { useNavigate } from "react-router-dom";
 
 function ServicesCards(props) {
@@ -16,15 +15,14 @@ function ServicesCards(props) {
           {props.description}
         </Card.Text>
         <Button variant="primary" onClick={() => {navigate(props.rdLink)}}>
-          {props.isBlog ? "Blog" : "Read More"}&nbsp;
-          <BsForward /> 
+          {"Read More"} 
         </Button>
         {"\n"}
         {"\n"}
 
         {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
 
-        {!props.isBlog && props.demoLink && (
+        {/* {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
             href={props.demoLink}
@@ -34,7 +32,7 @@ function ServicesCards(props) {
             <CgWebsite /> &nbsp;
             {"Demo"}
           </Button>
-        )}
+        )} */}
       </Card.Body>
     </Card>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
+// import Particle from "../Particle";
 // import laptopImg from "../../Assets/about.png";
 import app from "../../Assets/app.png";
 import WebApplicatonsCard from "./WebApplicatoinsCard";
@@ -10,7 +10,7 @@ import Techstack from "./Techstack";
 function WebApplications() {
   return (
     <Container fluid className="about-section">
-      <Particle />
+      {/* <Particle /> */}
       <Container>
         <Row style={{ maxWidth: "100%", justifyContent: "center", padding: "10px" }}>
           <Col

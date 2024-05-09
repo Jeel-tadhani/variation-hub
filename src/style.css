@@ -153,8 +153,12 @@ button:focus {
 }
 
 .logo {
-  /* height: 1.4em !important; */
   width: 8em !important;
+}
+
+.logo-footer {
+  width: 222px !important;
+  margin: 20px;
 }
 
 .navbar-nav .nav-link {
@@ -356,6 +360,7 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  text-align: -webkit-center;
 }
 
 .home-about-description {
@@ -425,8 +430,7 @@ button:focus {
 
 .social-icons {
   display: inline-block !important;
-  padding-right: 15px;
-  padding-left: 15px;
+padding: 5px;
 }
 
 .icon-colour {
@@ -439,8 +443,31 @@ button:focus {
 .footer {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important;
+  padding-top: 170px !important;
+  padding-bottom: 17px !important;
+}
+
+.footer-svg {
+  color: white;
+  font-size: 25px;
+}
+
+.p-footer {
+  color: white;
+  text-align: justify;
+  margin: 10px;
+  font-size: 13px;
+}
+
+.end-footer {
+  text-align: center;
+}
+
+.footer-header {
+  font-size: 20px;
+  color: white !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
 }
 
 .footer-copywright {
@@ -825,4 +852,9 @@ button:focus {
   height: 10PX;
   display: flex;
   align-items: center;
+}
+
+.more-button-details {
+  text-align: right;
+  margin-right: 25px;
 }

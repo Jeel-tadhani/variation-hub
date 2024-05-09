@@ -22,7 +22,7 @@ function Home3() {
         </p>
 
         <div className="more-button-details">
-          <Button variant="primary" onClick={() => { navigate('/our-services') }}>
+          <Button variant="primary" onClick={() => { navigate('/project') }}>
             More Projects
           </Button>
         </div>

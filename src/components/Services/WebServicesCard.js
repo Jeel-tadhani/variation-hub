@@ -2,7 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 // import { ImPointRight } from "react-icons/im";
 
-function WebApplicationsCard() {
+function WebServicesCard() {
   return (
     <Card className="quote-card-view">
       <Card.Body>
@@ -42,4 +42,4 @@ function WebApplicationsCard() {
   );
 }
 
-export default WebApplicationsCard;
+export default WebServicesCard;

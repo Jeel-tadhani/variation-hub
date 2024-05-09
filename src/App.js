@@ -7,7 +7,9 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs/ContactUs";
-import WebApplications from "./components/Services/WebApplications";
+import WebServices from "./components/Services/WebServices";
+import AppServices from "./components/Services/AppServices";
+import Blockchain from "./components/Services/Blockchain";
 import {
   BrowserRouter as Router,
   Route,
@@ -39,7 +41,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/our-services" element={<Services />} />
-          <Route path="/web-application" element={<WebApplications />} />
+          <Route path="/web-services" element={<WebServices />} />
+          <Route path="/app-services" element={<AppServices />} />
+          <Route path="/blockchain-services" element={<Blockchain />} />
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact-us" element={<ContactUs />} />

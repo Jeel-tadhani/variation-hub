@@ -430,7 +430,7 @@ button:focus {
 
 .social-icons {
   display: inline-block !important;
-padding: 5px;
+  padding: 5px;
 }
 
 .icon-colour {
@@ -514,6 +514,7 @@ padding: 5px;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
+  text-align: -webkit-center;
 }
 
 .project-card {
@@ -857,4 +858,33 @@ padding: 5px;
 .more-button-details {
   text-align: right;
   margin-right: 25px;
+}
+
+
+
+@media (max-width: 320px) {
+  .card-img-top {
+    max-width: 100% !important;
+    max-height: 70% !important;
+    height: 100% !important;
+  }
+  .card-body .card-text{
+    font-size: 12px;
+  }
+  .project-heading {
+    padding: 8px !important;
+}
+
+.home-content {
+  padding: 2rem 0 1rem !important;
+}
+  }
+
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 1rem 1rem !important;
+    font-size: 1.4rem !important;
+    background-color: #181a27 !important;
+  }
 }

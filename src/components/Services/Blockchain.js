@@ -3,11 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 // import Particle from "../Particle";
 // import laptopImg from "../../Assets/about.png";
 import app from "../../Assets/app.png";
-import WebApplicatonsCard from "./WebApplicatoinsCard";
+import WebApplicatonsCard from "./BlockchainCard";
 // import Toolstack from "./Toolstack";
 import Techstack from "./Techstack";
 
-function WebApplications() {
+function Blockchain() {
   return (
     <Container fluid className="about-section">
       {/* <Particle /> */}
@@ -22,7 +22,7 @@ function WebApplications() {
             }}
           >
             <strong style={{ display: "flex", textTransform: "uppercase", textAlign: "left", width: "100%", maxWidth: "180px", fontSize: "3.5em", paddingBottom: "20px" }}>
-              Web Applications
+            Blockchain Services
             </strong>
             <hr style={{ borderBottom: "2px solid " }} />
             <WebApplicatonsCard />
@@ -53,4 +53,4 @@ function WebApplications() {
   );
 }
 
-export default WebApplications;
+export default Blockchain;

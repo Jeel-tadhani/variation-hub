@@ -437,13 +437,21 @@ button:focus {
   color: #34ffff !important;
 }
 
+@media (max-width: 767px) {
+  .f-icons {
+    flex-direction: row !important;
+    justify-content: center;
+  }
+
+}
+
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;
-  padding-top: 170px !important;
+  padding-top: 8vh !important;
   padding-bottom: 17px !important;
 }
 
@@ -455,7 +463,7 @@ button:focus {
 .p-footer {
   color: white;
   text-align: justify;
-  margin: 10px;
+  margin: 1.5vh;
   font-size: 13px;
 }
 
@@ -471,22 +479,48 @@ button:focus {
 }
 
 .footer-copywright {
-  text-align: center !important;
+  text-align: center;
 }
 
 .footer-body {
-  z-index: 1;
-  text-align: center !important;
+  display: flex;
+  flex-direction: column;
+  margin: 2vh;
+  text-align: center;
+}
+
+
+.body-data {
+  margin: 1vh;
+}
+
+.quick-links {
+  display: none;
 }
 
 @media (max-width: 767px) {
   .footer-copywright {
-    text-align: center !important;
+    text-align: center;
   }
 
   .footer-body {
-    text-align: center !important;
+    text-align: left;
   }
+
+  .links-services {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left !important;
+  }
+
+  .quick-links {
+    display: flex;
+  }
+}
+
+
+.title {
+  padding-bottom: 3vh;
 }
 
 .footer h3 {
@@ -506,6 +540,10 @@ button:focus {
   color: #baffff !important;
 }
 
+/* .links-services {
+  display: flex;
+  justify-content: space-evenly;
+} */
 /* --------- */
 /* Projects */
 /* --------- */
@@ -526,7 +564,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px #2e6060 !important;
+  box-shadow: 0 4px 5px 3px #332c4568 !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -537,7 +575,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px #2e6060 !important;
+  box-shadow: 0 4px 4px 5px #332c4588 !important;
 }
 
 .blog-card {
@@ -575,8 +613,7 @@ button:focus {
   padding: 20px !important;
   opacity: 0.8 !important;
   border-radius: 10px !important;
-  height: 250px !important;
-  width: 390px !important;
+  height: 100%;
 }
 
 .blog-img {
@@ -860,25 +897,30 @@ button:focus {
   margin-right: 25px;
 }
 
-
-
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .card-img-top {
     max-width: 100% !important;
     max-height: 70% !important;
     height: 100% !important;
+    /* width: none !important; */
   }
-  .card-body .card-text{
+
+  .more-button-details {
+    display: none;
+  }
+
+  .card-body .card-text {
     font-size: 12px;
   }
+
   .project-heading {
     padding: 8px !important;
-}
-
-.home-content {
-  padding: 2rem 0 1rem !important;
-}
   }
+
+  .home-content {
+    padding: 2rem 0 1rem !important;
+  }
+}
 
 
 @media (max-width: 767px) {

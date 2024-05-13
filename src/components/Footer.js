@@ -8,19 +8,27 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import logo from "../Assets/vh-name-logo.png";
 import { Link } from "react-router-dom";
+import favicon from "../Assets/vh-favicon.png";
 
 function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col md="3" className="footer-copywright">
-          <a href="/" className="d-flex">
-            <img src={logo} className="img-fluid logo-footer" alt="brand" />
-          </a>
+        <Col md="3" className="footer-logo">
+          <div className="footer-description">
 
-          <br />
+            <a href="/" className="d-flex logo">
+              <img src={favicon} className="img-fluid favicon-footer" alt="brand" />
+            </a>
 
-          <p className="p-footer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncove</p>
+            <a href="/" className="d-flex logo">
+              <img src={logo} className="img-fluid logo-footer" alt="brand" />
+            </a>
+          </div>
+
+          <div>
+            <p className="p-footer">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncove</p>
+          </div>
         </Col>
 
         <Col md="3" className="footer-copywright footer-header links-services">

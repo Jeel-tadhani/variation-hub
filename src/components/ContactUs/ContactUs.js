@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 // import { AiOutlineDownload } from "react-icons/ai";
 // import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import ContactForm from "./ContactForm";
 
 function ContactUs() {
   // const [width, setWidth] = useState(1200);
@@ -16,8 +16,8 @@ function ContactUs() {
   // }, []);
 
   return (
-    <div>
-      <Container fluid className="resume-section">
+    <div >
+      <Container fluid className="resume-section contact-us">
         {/* <Particle /> */}
         {/* <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
@@ -48,6 +48,7 @@ function ContactUs() {
             &nbsp;Download CV
           </Button>
         </Row> */}
+        <ContactForm/>
       </Container>
     </div>
   );

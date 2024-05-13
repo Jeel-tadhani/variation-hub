@@ -57,7 +57,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome className="navbar-icons" /> Home
               </Nav.Link>
             </Nav.Item>
 
@@ -68,8 +68,8 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <BsPersonWorkspace
-                  style={{ marginBottom: "2px" }}
-                />{" "}
+                  className="navbar-icons"
+                />
                 Our Services
               </Nav.Link>
             </Nav.Item>
@@ -81,8 +81,8 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
+                  className="navbar-icons"
+                />
                 Projects
               </Nav.Link>
             </Nav.Item>
@@ -93,7 +93,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <IoIosInformationCircleOutline style={{ marginBottom: "2px" }} /> About
+                <IoIosInformationCircleOutline className="navbar-icons" /> About
               </Nav.Link>
             </Nav.Item>
 
@@ -103,7 +103,7 @@ function NavBar() {
                 to="/contact-us"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Contact Us
+                <AiOutlineUser className="navbar-icons" /> Contact Us
               </Nav.Link>
             </Nav.Item>
 

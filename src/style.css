@@ -136,11 +136,27 @@ button:focus {
   opacity: 0.9 !important;
 }
 
+.navbar-icons {
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
 @media (max-width: 767px) {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
     background-color: #181a27 !important;
+  }
+
+  .navbar-icons {
+    margin-right: 1vw;
+    margin-bottom: 1vh;
+  }
+
+  .ms-auto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .navbar-nav .nav-item a::after {
@@ -154,11 +170,17 @@ button:focus {
 
 .logo {
   width: 8em !important;
+  display: flex;
+  justify-content: center;
+}
+
+.favicon-footer {
+  width: 70% !important;
 }
 
 .logo-footer {
-  width: 222px !important;
-  margin: 20px;
+  max-width: 200% !important;
+  margin: 2vw;
 }
 
 .navbar-nav .nav-link {
@@ -175,11 +197,15 @@ button:focus {
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
+
+  .logo-footer {
+    max-width: 200% !important;
+    margin: 5vh;
+  }
 }
 
 .navbar-nav .nav-item {
   position: relative;
-  margin-left: 20px;
 }
 
 .navbar-nav .nav-item a {
@@ -437,10 +463,33 @@ button:focus {
   color: #34ffff !important;
 }
 
+.p-body {
+  color: white !important;
+  width: 50%;
+  text-align: justify;
+}
+
+.f-icons {
+  display: flex;
+  flex-direction: column;
+  margin: 2vh;
+}
+
 @media (max-width: 767px) {
   .f-icons {
     flex-direction: row !important;
     justify-content: center;
+  }
+
+  .f-icons {
+    flex-direction: row !important;
+    justify-content: center;
+  }
+
+  .p-body {
+    color: white !important;
+    width: 100%;
+    text-align: justify;
   }
 
 }
@@ -463,7 +512,7 @@ button:focus {
 .p-footer {
   color: white;
   text-align: justify;
-  margin: 1.5vh;
+  margin: 0vh 1vw;
   font-size: 13px;
 }
 
@@ -491,16 +540,26 @@ button:focus {
 
 
 .body-data {
+  text-align: left;
   margin: 1vh;
+  padding-left: 7.5vw;
 }
 
 .quick-links {
   display: none;
 }
 
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 @media (max-width: 767px) {
   .footer-copywright {
-    text-align: center;
+    text-align: left;
+    padding: 5vw !important;
   }
 
   .footer-body {
@@ -515,6 +574,12 @@ button:focus {
 
   .quick-links {
     display: flex;
+  }
+
+  .body-data {
+    text-align: left;
+    margin: 1vh;
+    padding-left: 0%;
   }
 }
 
@@ -677,6 +742,7 @@ button:focus {
   .tech-icons {
     margin: 10px !important;
   }
+
 }
 
 /* .tech-icons:hover {
@@ -929,4 +995,32 @@ button:focus {
     font-size: 1.4rem !important;
     background-color: #181a27 !important;
   }
+}
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  background-color: white;
+  padding: 5vw;
+  width: 75vw;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.first-name {
+  width: 100%;
+}
+
+.last-name {
+  width: 100%;
 }

@@ -15,7 +15,7 @@ function Services() {
           OUR SERVICES
         </h1>
 
-        <p style={{ color: "white", width: "50%" }}>
+        <p className="p-body">
           Here are a few services I've worked on recently.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
         </p>
 

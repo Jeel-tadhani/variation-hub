@@ -5,7 +5,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import app from "../../Assets/app.png";
 import WebApplicatonsCard from "./BlockchainCard";
 // import Toolstack from "./Toolstack";
-import Techstack from "./Techstack";
 
 function Blockchain() {
   return (
@@ -36,11 +35,6 @@ function Blockchain() {
             <img src={app} alt="about" className="img-fluid" />
           </Col>
         </Row>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
-        </h1>
-
-        <Techstack />
         {/* 
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use

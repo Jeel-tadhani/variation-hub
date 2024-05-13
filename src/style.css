@@ -929,8 +929,10 @@ button:focus {
 
 .web {
   padding: 40px !important;
-  text-align: -webkit-center;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 35%;
 }
 
 .web-icons {
@@ -938,7 +940,7 @@ button:focus {
   max-width: 200px;
   min-height: 100px;
   max-height: 200px;
-  margin: 15px;
+  margin: 15px;  
   display: flex;
   justify-content: center;
 }
@@ -946,14 +948,23 @@ button:focus {
 .web-languages {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  margin: auto;
+  margin: 1vh;
+  /* font-size: 1vw; */
 }
 
-.web-languages-content {
+.web-languages-line {
   margin-right: 5px;
-  padding: 10px;
+  padding: 1vw;
   border-right: 1px solid grey;
-  height: 10PX;
+  height: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.web-languages-without-line {
+  margin-right: 5px;
+  padding: 1vw;
+  height: 10px;
   display: flex;
   align-items: center;
 }
@@ -986,6 +997,37 @@ button:focus {
   .home-content {
     padding: 2rem 0 1rem !important;
   }
+
+  .web-languages {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: baseline;
+    /* font-size: 3vw; */
+  }
+  
+  .web-languages-line {
+    margin: 1vw;
+    padding: 3vw;
+    border-right: 1px solid grey;
+    height: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .web-languages-without-line {
+    margin-right: 1vw;
+    padding: 3vw;
+    height: 10px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.home-techstack {
+  /* justify-content: "center";
+  padding-bottom: "50px"; */
+  color: white;
+  margin-right: 0% !important;
 }
 
 

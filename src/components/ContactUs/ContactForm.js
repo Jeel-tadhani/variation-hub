@@ -3,8 +3,11 @@
 // import Button from "react-bootstrap/Button";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { TextField } from "@mui/material";
+import Button from "react-bootstrap/Button";
+import { useNavigate } from "react-router-dom";
 
 function ContactForm() {
+    const navigate = useNavigate()
 
     return (
         <form className="form" >
@@ -30,7 +33,7 @@ function ContactForm() {
                 <TextField
                     className="first-name"
                     id="outlined-basic"
-                    label="Email*"
+                    label="Email Address*"
                     variant="outlined"
                     size="small"
                 />
@@ -42,6 +45,22 @@ function ContactForm() {
                     variant="outlined"
                     size="small"
                 />
+
+            </div>
+            <div>
+                <Button style={{marginTop: "2vw"}} variant="primary" onClick={() => { navigate('') }}>
+                    Submit
+                </Button>
+            </div>
+            <div className="form-footer">
+                <p>OR
+                    <br />
+                    Reach out to us at Variation Hub Private Limited,
+                    <br />
+                    105, Dhara Arcade, Mota Varachha, Surat, Gujarat - 394101.
+                    <br />
+                    Email:  <a className="form-footer-email" href="mailto:service@variationhub.com" >service@variationhub.com</a>
+                </p>
             </div>
         </form >
     );

@@ -17,7 +17,7 @@ function ContactUs() {
 
   return (
     <div >
-      <Container fluid className="resume-section contact-us">
+      <Container fluid className="contact-us">
         {/* <Particle /> */}
         {/* <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
@@ -30,7 +30,7 @@ function ContactUs() {
             &nbsp;Download CV
           </Button>
         </Row> */}
-{/* 
+        {/* 
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
@@ -48,7 +48,17 @@ function ContactUs() {
             &nbsp;Download CV
           </Button>
         </Row> */}
-        <ContactForm/>
+
+        <div className="contact-us-content">
+          <h1 className="project-heading">
+          Contact Us
+          </h1>
+
+          <p className="p-body">
+          We are on hand to answer your questions. Complete the form and leave your contacts, our team will be in touch as soon as possible. We`d love to tell you more:
+          </p>
+        </div>
+        <ContactForm />
       </Container>
     </div>
   );

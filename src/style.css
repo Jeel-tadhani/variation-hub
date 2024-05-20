@@ -292,6 +292,16 @@ button:focus {
   height: 100%;
 }
 
+.form-footer{
+  color: black !important;
+  font-family: math;
+}
+
+.form-footer-email{
+  color: rgb(64, 101, 221) !important;
+  font-family: math;
+}
+
 .home-header {
   padding-top: 80px !important;
 }
@@ -1002,7 +1012,7 @@ button:focus {
     display: grid;
     grid-template-columns: auto auto auto auto;
     align-items: baseline;
-    /* font-size: 3vw; */
+    font-size: 3.5vw;
   }
   
   .web-languages-line {
@@ -1042,15 +1052,25 @@ button:focus {
 .contact-us {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
 }
 
 .form {
   display: flex;
   background-color: white;
-  padding: 5vw;
-  width: 75vw;
+  padding: 3vw;
+  width: 70vw;
   flex-direction: column;
   gap: 2vh;
+  margin: 3vw;
 }
 
 .name {
